@@ -1,5 +1,6 @@
 import type { PluggableList } from '@mdx-js/mdx/lib/core.js';
 import type { Options as AcornOpts } from 'acorn';
+import type { Program as ESTreeProgram } from 'estree';
 import { parse } from 'acorn';
 import type { AstroConfig, SSRError } from 'astro';
 import matter from 'gray-matter';
@@ -76,8 +77,7 @@ export function jsToTreeNode(
 		value: '',
 		data: {
 			estree: {
-				body: [],
-				...parse(jsString, acornOpts),
+				...parse(jsString, acornOpts) as ESTreeProgram,
 				type: 'Program',
 				sourceType: 'module',
 			},
