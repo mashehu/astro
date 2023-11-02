@@ -1,5 +1,11 @@
 # astro
 
+## 3.4.4
+
+### Patch Changes
+
+- [#8986](https://github.com/withastro/astro/pull/8986) [`910eb00fe`](https://github.com/withastro/astro/commit/910eb00fe0b70ca80bd09520ae100e8c78b675b5) Thanks [@Princesseuh](https://github.com/Princesseuh)! - Fix `sizes` attribute not being present on `source` elements when using it on the Picture component
+
 ## 3.4.3
 
 ### Patch Changes
